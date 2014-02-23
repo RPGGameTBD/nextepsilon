@@ -42,7 +42,7 @@
 {
     CCSprite *toAdd = [[CCSprite alloc] initWithImageNamed:@"Stone.png"];
     [toAdd setPosition:[(UITouch *)[event.allTouches anyObject] locationInNode:self]];
-    CCPhysicsBody *physicsBody = [CCPhysicsBody bodyWithCircleOfRadius:5 andCenter: CGPointMake(5, 5)];
+    CCPhysicsBody *physicsBody = [CCPhysicsBody bodyWithCircleOfRadius:300 andCenter: CGPointMake(5, 5)];
     [toAdd setPhysicsBody:physicsBody];
     [toAdd.physicsBody setElasticity:0.8];
     [_mainPhysics addChild:toAdd];
